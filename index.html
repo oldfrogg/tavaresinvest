@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tavares Invest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,13 +13,47 @@
         <h1>TavaresInvest</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li><img src="assets/icons/home.png" alt=""><p class=nav__opcao>Home</p></li>
+                <li><img src="assets/icons/servicos.png" alt=""><p class=nav__opcao>Serviços</p></li>
+                <li><img src="assets/icons/contato.png" alt=""><p class=nav__opcao>Contato</p></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="carrossel">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/vista-metropole.jpg">
+                        <p class="swiper-descricao">Invista no seu futuro</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/predios-altos.jpg" alt="">
+                        <p class="swiper-descricao">Mantenha segura as suas conquistas</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/jatinho.jpg" alt="">
+                        <p class="swiper-descricao">Alcance novos objetivos</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/btc-chip.jpg" alt="">
+                        <p class="swiper-descricao">Conquiste o futuro</p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="botao">
+                <a><h3>Quero contar com o time!</h3></a>
+            </div>
+        </section>
         <section>
             <picture>
                 <img src="assets/pc_trading2.jpg">
@@ -62,5 +97,8 @@
             </div>
         </section>
     </main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
