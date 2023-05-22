@@ -19,8 +19,13 @@ img {
     max-height: 80vh;
 }
 
-div {
-    background: rgba(245, 234, 234, 0.7);
+.section__text {
+    background-color: rgba(245, 234, 234, 0.7);
+    width: 40vw;
+    padding: 1rem;
+}
+
+div{
     width: 40vw;
     padding: 1rem;
 }
@@ -57,6 +62,11 @@ h2+p {
         width: 90%;
     }
 
+    .section__text{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
     div{
         box-sizing: border-box;
         width: 100%;
@@ -66,4 +76,7 @@ h2+p {
         width: 100%;
     }
 
+    section:last-child{
+        margin-bottom:100px;
+    }
 }
